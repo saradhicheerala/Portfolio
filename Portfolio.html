@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css_file.css">
+    <script src="https://kit.fontawesome.com/9b22c929e1.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <a class="logo" href="#">Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu"></i>
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="hi">Home</a>
+            <a href="#about" class="hi">About</a>
+            <a href="#skills" class="hi">Skills</a>
+            <a href="#projects" class="hi">Projects</a>
+            <a href="#contact" class="hi">Contact</a>
+        </nav>
+    </header>
+    <!---home-page--->
+    <section class="home" id="home">
+        <div class="home-text">
+            <h3>Hi,I am</h3>
+            <h1>Saradhi Cheerala</h1>
+            <h3>and I am a <span> Frontend Developper</span></h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio, suscipit optio non nobis sed, at ullam accusamus consequatur, quas placeat excepturi tempora modi cumque? Et, neque vel? Nostrum, voluptates officia.</p>
+            <div class="social-media">
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <a href="#" class="btn">Download CV</a>
+        </div>
+        <div class="image">
+            <img src="pic.png">
+        </div>
+    </section>
+    <!---about-page-->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="image.JPG">
+        </div>
+        <div class="about-content">
+            <h2>About <span>Me</span></h1>
+            <h3>Frontend Developper</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae rem ex reprehenderit ab accusamus sit dolore facilis. Blanditiis, commodi officiis iste dicta cum, suscipit, quaerat ducimus recusandae in esse velit.</p>
+            <a href="#">Read More</a>
+        </div>
+    </section>
+    <!---skills-page-->
+    <section class="skills" id="skills">
+        <h1>My <span>Skills</span></h1>
+        <div class="skill-container">
+            <div class="skill-box">
+                <i class="fa-solid fa-code"></i>
+                <h3>Web Development</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, iste necessitatibus quae animi, ad magni officia hic explicabo eveniet eum autem debitis recusandae possimus? Nihil dicta provident libero debitis quam.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="skill-box">
+                <i class="fa-solid fa-palette"></i>
+                <h3>Ui/Ux Designing</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, iste necessitatibus quae animi, ad magni officia hic explicabo eveniet eum autem debitis recusandae possimus? Nihil dicta provident libero debitis quam.</p>
+                <a href="#">Read More</a>
+            </div>
+            <div class="skill-box">
+                <i class="fa-brands fa-react"></i>
+                <h3>React</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, iste necessitatibus quae animi, ad magni officia hic explicabo eveniet eum autem debitis recusandae possimus? Nihil dicta provident libero debitis quam.</p>
+                <a href="#">Read More</a>
+            </div>
+        </div>
+    </section>
+    <!---Projects-page-->
+    <section class="projects" id="projects">
+        <h1>My <span>Projects</span></h1>
+            <p>Projects_space
+            </p>  
+    </section>
+    <!----Contact-page-->
+    <section class="contact" id="contact">
+        <div class="contact-container">
+            <h1>Contact <span>Me</span></h1>
+            <form class="form" id="form">
+                <div class="input-box">
+                    <input type="text" id="name" placeholder="Enter Your Name">
+                    <input type="email" id="email" placeholder="Enter E-mail">
+                    <input type="number" id="number" placeholder="Enter Phone Number">
+                    <input type="text" id="subject" placeholder="Enter Subject">
+                    <textarea rows="6" id="message" placeholder="Enter Your Message"></textarea>
+                    <input type="submit" value="Send" onclick="sendEmail();">
+                </div>
+            </form>
+        </div>
+    </section>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+(function(){
+  emailjs.init({
+    publicKey: "BZeMTvIeB1EB12_mU",
+  });
+})();
+</script>
+    <script src="js_file.js"></script>
+</body>
+</html>
